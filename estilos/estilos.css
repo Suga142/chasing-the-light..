@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ----- Css general y de la pagina de inicio ----- */
+body{
+    background-image: url(../img/gif5.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+
+}
+
+
+.navbar{
+    background-color: rgb(16, 47, 56) !important;
+    border: rgb(155, 206, 222) 3px solid ;
+}
+
+
+h1{
+    color: rgb(155, 206, 222);
+    font-size: 40px;
+    text-align: center;
+
+    animation-name: entrar;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+
+
+
+.nav-link{
+    color: rgb(155, 206, 222) !important;
+    padding-right: 1vw !important ;
+    font-size: 20px;
+}
+
+
+.enlace{
+    text-decoration: none;
+    color: rgb(155, 206, 222);
+}
+
+.nav-link{
+    transition-delay: .1s;
+    transition-timing-function: ease;
+}
+
+.nav-link:hover{
+    color: rgb(73, 239, 220) !important;
+}
+
+main{
+    text-align: center;
+}
+
+.centro{
+    animation-name: aparicion;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+.logo{
+    width: 35vw;
+    height: 17vh;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    animation-name: palpitar;
+    animation-duration: 1.7s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.img1{
+    width: 50vw;
+    height: 55vh;
+    display: none;
+    margin-bottom: 30px;
+    padding-right: 35px;
+}
+
+main div ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+main div ul li{
+    display: list-item;
+     
+    margin-bottom: 12px;
+}
+
+.ptr{
+    width: 35px;
+    height: 35px;
+    margin-top: 7px;
+}
+
+.ptr:hover{
+    width: 60px;
+    height: 60px;
+}
+
+
+.instw{
+    width: 42px;
+    height: 42px;
+}
+
+.instw:hover{
+    width: 70px;
+    height: 70px;
+}
+
+.disc{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.disc:hover{
+    width: 72px;
+    height: 72px;
+}
+
+p{
+    font-size: 18px;
+    color: rgb(155, 206, 222);
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+.formulario1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+label{
+    font-size: 18px;
+    color: rgb(155, 206, 222);
+}
+
+input{
+    
+    font-size: 18px;
+    color: rgb(155, 206, 222);
+    background-color: rgb(16, 47, 56);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+select{
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    color: rgb(155, 206, 222);
+    background-color: rgb(16, 47, 56);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.az{
+    color: blue;
+}
+
+.ro{
+    color: red;
+}
+
+.ve{
+    color: green;
+}
+
+.ce{
+    color: aqua;
+}
+
+.am{
+    color: yellow;
+}
+
+.mo{
+    color: purple;
+}
+
+.na{
+    color: orange;
+}
+
+.enviar{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+h3{
+    color: rgb(155, 206, 222);
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 2px;
+    margin-right: 2px;
+    
+}
+
+.comenzar{
+    font-size: 30px;
+    background-color: rgb(155, 206, 222);
+    border: rgb(16, 47, 56) 3px solid;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(16, 47, 56);
+    margin-bottom: 20px;
+}
+
+h2{
+    color: rgb(155, 206, 222);
+    margin: 35px;
+}
+
+.conse-grid{
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.card{
+    width: 18rem;
+    background-color: rgb(16, 47, 56);
+    border: rgb(155, 206, 222) 3px solid;
+
+    animation-name: bajar;
+    animation-duration: 1.3s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+
+
+.card img{
+    height: 30vh;
+}
+
+.card h5{
+    color: rgb(73, 239, 220);
+}
+
+.card p{
+    color: rgb(73, 239, 220);
+}
+
+
+footer{
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(155, 206, 222);
+    margin-top: 20px;
+}
+
+h5{
+    margin-bottom: 70px;
+    background-color: rgb(16, 47, 56);
+    display: inline-block;
+    border: 2px solid;
+    padding: 5px;
+}
+
+/* ----- css pagina de noticias ----- */
+
+
+.noticias{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 95%;
+    justify-content: center;
+
+    animation-name: aparicion;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+.noticia{
+    text-align: center;
+    color: rgb(155, 206, 222);
+    list-style-type: none;
+    background-color: rgb(16, 47, 56);
+    border: rgb(57, 135, 126) 3px solid;
+    
+    
+}
+
+.noticias h2{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.noticias p{
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.noticias ul{
+    list-style-type: none;
+    height: 265px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.noticias li{
+    padding-bottom: 30px;
+    font-size: 17px;
+}
+
+.enlace2{
+    color: rgb(155, 206, 222);
+}
+
+.enlace2:hover{
+    color: rgb(57, 135, 126);
+}
+
+.evento p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+
+
+/* ----- css pagina de soporte ----- */
+
+.form-soporte{
+    text-align: center;
+    color: rgb(73, 239, 220)
+}
+
+.form-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    color: rgb(73, 239, 220);
+}
+
+.form-label{
+    background-color: rgb(16, 47, 56);
+    border: rgb(155, 206, 222) 2px solid;
+    padding: 5px;
+}
+
+.inp1{
+    width: 300px;
+    background-color: rgb(16, 47, 56);
+}
+
+.texta1{
+    resize: none;
+    font-size: 18px;
+    background-color: rgb(16, 47, 56);
+    height: 30vh;
+}
+
+
+/* ----- css pagina de comunidad ----- */
+
+
+.centrar-titulo{
+    display: flex;
+    justify-content: center;
+    color: rgb(155, 206, 222);
+    
+}
+
+.cuadro-color{
+    color: rgb(155, 206, 222);
+    text-align: center;
+    background-color: rgb(16, 47, 56);
+    border: rgb(155, 206, 222) 3px solid;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.texta2{
+    resize: none;
+    font-size: 18px;
+    background-color: rgb(16, 47, 56);
+    color: rgb(155, 206, 222);
+}
+.enviar2{
+ text-align: center;
+ margin-bottom: 25px;
+}
+
+
+.comentario{
+    color: rgb(155, 206, 222);
+    background-color: rgb(16, 47, 56);
+    border: rgb(155, 206, 222) 3px solid;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 250px;
+}
+
+/* ------ css pagina de informacion ------ */
+
+.info{
+    animation-name: aparicion;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    margin: 60px;
+}
+
+
+
+.accordion-item{
+    background-color: rgb(16, 47, 56);
+    border: rgb(155, 206, 222) 3px solid !important;
+}
+
+
+.accordion-button{
+    background-color: rgb(16, 47, 56);
+    color: rgb(155, 206, 222);
+    font-size: 22px;
+}
+
+.accordion-body{
+    color: rgb(155, 206, 222);
+}
+
+
+
+/* ----- Animaciones ----- */
+
+@keyframes aparicion{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes palpitar{
+    0%{
+        transform: scale(.8,.7);
+    }
+
+    50%{
+        transform: scale(.9,.8);
+    }
+
+    100%{
+        transform: scale(1,.9);
+    }
+}
+
+@keyframes entrar{
+    0%{
+        transform: translateX(-200px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes bajar{
+    0%{
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+
+}
+
+/* ----- Media Queries----- */
+
+@media screen and (min-width: 650px){
+    /* Inicio */
+    .centro{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 120px;
+    }
+
+    .centro ul{
+        display: inline-block;
+    }
+
+    .logo{
+        width: 8vw;
+        height: 10vh;
+    }
+
+    .img1{
+        display: inline-block;
+        
+    }
+
+    h5{
+        font-size: 18px;
+    }
+
+
+    /* Soporte */
+    .texta1{
+        width: 80vw;
+    }
+
+    /* comunidad */
+    .texta2{
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 875px){
+
+    header{
+        position: sticky; top: 10px;
+        z-index: 100;
+    }
+
+    /* Grid de Noticias */
+
+    .noticias{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-areas: 
+        "not-1 not-2"
+        "not-3 not-4"
+        ;
+        padding: 15px;
+        column-gap: 15px;
+        row-gap: 40px;
+    }
+
+    .not-1{
+        grid-area: not-1;
+    }
+
+    .not-2{
+        grid-area: not-2;
+    }
+
+    .not-3{
+        grid-area: not-3;
+    }
+
+    .not-4{
+        grid-area: not-4;
+    }
+
+}
+
+@media screen and (min-width: 1245px){
+    .info p{
+        height: 20vh;
+    }
+
+    .inf-3 p{
+        height: 30vh;
+    }
+
+    .inf-4 p{
+        height: 30vh;
+    }
+}
