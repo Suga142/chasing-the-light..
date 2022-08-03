@@ -1,14 +1,17 @@
 @media screen and (min-width: 650px){
-    /* Inicio */
+
     .centro{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         margin-top: 120px;
+
+        
     }
 
     .centro ul{
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
     }
 
     .logo{
@@ -17,23 +20,21 @@
     }
 
     .img1{
-        display: inline-block;
+        display: inline-block
         
     }
+
+    
 
     h5{
         font-size: $size2;
     }
 
 
-    /* Soporte */
-    .texta1{
-        width: 80vw;
-    }
-
-    /* comunidad */
-    .texta2{
-        width: 80vw;
+    .form-2{
+        textarea{
+            width: 80vw;
+        }
     }
 }
 
@@ -44,7 +45,6 @@
         z-index: 100;
     }
 
-    /* Grid de Noticias */
 
     .noticias{
         display: grid;
